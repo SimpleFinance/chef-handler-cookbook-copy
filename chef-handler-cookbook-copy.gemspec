@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = 'chef-handler-cookbook-copier'
+  s.name = 'chef-handler-cookbook-copy'
   s.version = '0.1.0'
   s.author = 'Simple Finance'
   s.email = 'ops@simple.com'
