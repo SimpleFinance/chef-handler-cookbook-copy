@@ -1,4 +1,4 @@
-# lib/chef-handler-cookbook-copier.rb
+# lib/chef-handler-cookbook-copy.rb
 #
 # Author: Simple Finance <ops@simple.com>
 # Copyright 2013 Simple Finance Technology Corporation.
@@ -23,7 +23,7 @@ require 'rubygems'
 require 'chef'
 require 'chef/handler'
 
-class ChefCookbookCopier < Chef::Handler
+class ChefCookbookCopy < Chef::Handler
     attr_reader :path, :mode, :always_copy
 
     def initialize(options = defaults)
