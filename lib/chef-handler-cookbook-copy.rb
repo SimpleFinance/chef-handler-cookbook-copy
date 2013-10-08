@@ -46,7 +46,7 @@ class ChefCookbookCopy < Chef::Handler
         dst = ::File.join(@path, "cookbooks-#{index}")
         FileUtils.mkdir_p(dst, :mode => @mode) if !Dir.exists?(dst)
         Dir.entries(origin).sort[2..-1].each do |cookbook|
-          FileUtils.cp_r(cookbook, dst)
+          FileUtils.cp_r(::File.join(origin, cookbook), dst)
         end
       end
     end
